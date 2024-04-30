@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    background-color: aqua;
+}
+
+.homediv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    button{
+        width: 30%;
+    }
+}

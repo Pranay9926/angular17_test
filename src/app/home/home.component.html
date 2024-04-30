@@ -1,0 +1,12 @@
+<div class="homediv">
+    <h1>home works!</h1>
+@if(isLogin){
+
+    <h2>your are logged out </h2>
+    <button (click)="loginfun()">Login</button>
+}@else{
+
+    <h2>your are logged in </h2>
+    <button (click)="loginfun()">Logout</button>
+}
+</div>
