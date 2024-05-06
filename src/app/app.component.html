@@ -9,8 +9,15 @@
 
   <div>
     <a routerLink="home">Home</a>|
-    <a routerLink="aboutUs">About Us</a>|
+    <a routerLink="home/aboutUs">About Us</a>|
     <a routerLink="contectUs">Contect Us</a>|
+    <!-- <a [routerLink]="[{outlets:{outlets2:['newoutlet']}}]">Contect Us 2</a>| -->
   </div>
-  <router-outlet></router-outlet>
+  <div >
+    <router-outlet></router-outlet>
+  </div>
+  <!-- <div style="background-color: red;">
+    <router-outlet name="outlets2"></router-outlet>
+  </div> -->
+  
 </div>

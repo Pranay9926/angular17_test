@@ -1,0 +1,25 @@
+@if(!isLogin){
+    <div>
+        <p>child-one works!</p>
+        <button (click)="onClick()"> Add more +</button>
+        @if(toggle){
+           <div>
+                <input value = {{name}} type="text" (keyup) = "handleChnage($event)" />
+                <button (click)='addItem()'>Enter</button>
+           </div>
+        }
+    </div>
+    <div>
+        <ol>
+        @for(list of lists ; track $index ){
+                <li>
+                    {{list}}
+                    <button (click)="reomveItem($index)">Remove</button>
+                </li>
+            }
+        @empty{
+            No Data
+        }
+        </ol>
+    </div>
+}
